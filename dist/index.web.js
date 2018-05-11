@@ -19643,7 +19643,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/HelloWorld.vue"
+Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/HelloWorld.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] HelloWorld.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -19707,7 +19707,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/ImageTest.vue"
+Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/ImageTest.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] ImageTest.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -19851,7 +19851,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/TopHeader.vue"
+Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/TopHeader.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] TopHeader.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20084,7 +20084,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/index.vue"
+Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/index.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] index.vue: functional components are not supported with templates, they should use render functions.")}
 
@@ -20189,9 +20189,7 @@ var getURL = __webpack_require__(22).getURL; //
 
 var navigator = weex.requireModule('navigator');
 var modal = weex.requireModule('modal');
-function add() {
-  console.log('aa');
-}
+
 exports.default = {
   name: 'App',
   components: {
@@ -20214,6 +20212,7 @@ exports.default = {
       modal.toast({ message: env.platform });
       navigator.push({
         url: url,
+        title: "意见反馈",
         animated: 'true'
       }, function (event) {
         modal.toast({ message: 'callback: ' + event });
@@ -20250,6 +20249,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
   }, [_vm._v("The environment is ready!")]), _vm._v(" "), _c('HelloWorld'), _vm._v(" "), _c('button', {
     staticClass: "routerlink",
     attrs: {
+      "id": "goImageBtn",
       "data-evt-click": ""
     },
     on: {

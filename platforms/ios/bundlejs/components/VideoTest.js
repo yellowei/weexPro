@@ -93,10 +93,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/VideoTest.vue"
+__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/VideoTest.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-6742b378"
+__vue_options__._scopeId = "data-v-162fae32"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {

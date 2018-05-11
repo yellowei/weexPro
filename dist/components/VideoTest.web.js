@@ -19690,7 +19690,7 @@ var Component = __webpack_require__(2)(
   /* moduleIdentifier (server only) */
   null
 )
-Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/VideoTest.vue"
+Component.options.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/VideoTest.vue"
 if (Component.esModule && Object.keys(Component.esModule).some(function (key) {return key !== "default" && key.substr(0, 2) !== "__"})) {console.error("named exports are not supported in *.vue files.")}
 if (Component.options.functional) {console.error("[vue-loader] VideoTest.vue: functional components are not supported with templates, they should use render functions.")}
 

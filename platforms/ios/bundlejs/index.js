@@ -295,10 +295,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/index.vue"
+__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/index.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-bef868dc"
+__vue_options__._scopeId = "data-v-52f7b74f"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -397,9 +397,7 @@ var getURL = __webpack_require__(7).getURL; //
 
 var navigator = weex.requireModule('navigator');
 var modal = weex.requireModule('modal');
-function add() {
-  console.log('aa');
-}
+
 exports.default = {
   name: 'App',
   components: {
@@ -422,6 +420,7 @@ exports.default = {
       modal.toast({ message: env.platform });
       navigator.push({
         url: url,
+        title: "意见反馈",
         animated: 'true'
       }, function (event) {
         modal.toast({ message: 'callback: ' + event });
@@ -453,7 +452,7 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/HelloWorld.vue"
+__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/HelloWorld.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 __vue_options__.style = __vue_options__.style || {}
@@ -496,10 +495,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/ImageTest.vue"
+__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/ImageTest.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2db65b24"
+__vue_options__._scopeId = "data-v-563fddc7"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -540,10 +539,10 @@ __vue_options__ = __vue_exports__ = __vue_exports__.default
 if (typeof __vue_options__ === "function") {
   __vue_options__ = __vue_options__.options
 }
-__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/Weex/WeexDemo/weexPro/src/components/TopHeader.vue"
+__vue_options__.__file = "/Users/huangwei/Documents/iOS Development/GitHub/weexPro/src/components/TopHeader.vue"
 __vue_options__.render = __vue_template__.render
 __vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-ca748f4e"
+__vue_options__._scopeId = "data-v-79618a08"
 __vue_options__.style = __vue_options__.style || {}
 __vue_styles__.forEach(function (module) {
   for (var name in module) {
@@ -573,6 +572,9 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: ["greeting"]
   }, [_vm._v("The environment is ready!")]), _c('HelloWorld'), _c('button', {
     staticClass: ["routerlink"],
+    attrs: {
+      "id": "goImageBtn"
+    },
     on: {
       "click": _vm.goImage
     }

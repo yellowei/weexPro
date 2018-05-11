@@ -41,6 +41,7 @@ export default {
       modal.toast({ message: env.platform })
       navigator.push({
         url: url,
+        title: "意见反馈",
         animated: 'true'
       }, event => {
         modal.toast({ message: 'callback: ' + event })
